@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "day_id": "day-20261003",
+  "trip_id": "trip-xinjiang-2026",
+  "revision": 1,
+  "base_revision": null,
+  "date": "2026-10-03",
+  "timezone": null,
+  "locations": ["伊宁", "赛里木湖", "果子沟"],
+  "itinerary": "上午从伊宁出发，中午到赛里木湖，傍晚经过果子沟。",
+  "memory": "风很大，我们在车里吃了午饭。",
+  "facts": [
+    {"id": "fact-1", "text": "上午从伊宁出发，中午到赛里木湖，傍晚经过果子沟。", "source": "user", "photo_id": null},
+    {"id": "fact-2", "text": "风很大，我们在车里吃了午饭。", "source": "user", "photo_id": null}
+  ],
+  "photos": [],
+  "selected_photos": [],
+  "hero_photo_id": null,
+  "copy": {
+    "mode": "light_narrative",
+    "title": {"text": "赛里木湖的风", "source_ids": ["fact-1", "fact-2"]},
+    "blocks": [
+      {"id": "text-1", "kind": "opening", "text": "上午从伊宁出发，中午到了赛里木湖。湖边风很大，我们在车里吃了午饭，傍晚继续经过果子沟。", "source_ids": ["fact-1", "fact-2"]}
+    ]
+  },
+  "spreads": [],
+  "status": "draft",
+  "pending_questions": ["请提供当天照片，以便选片和生成跨页。"],
+  "assumptions": ["信息有限，仅生成一处正文草稿，不为达到文字数量重复叙述。"],
+  "checks": [
+    {"name": "copy_sources", "status": "passed", "detail": "标题与开篇仅使用用户行程及记忆。"},
+    {"name": "photo_selection_and_layout", "status": "not_run", "detail": "尚未提供照片。"},
+    {"name": "pdf_export", "status": "not_run", "detail": "尚无已确认页面及渲染结果。"}
+  ],
+  "persistence": "pending"
+}
